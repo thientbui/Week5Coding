@@ -1,9 +1,16 @@
-package JavaWeek5; 
+package JavaWeek5;
+
 public class App {
-
+	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	SpacedLogger log = new SpacedLogger();
+	AsteriskLogger asterisk = new AsteriskLogger();
+				
+	String test = "Hello guys";
+	log.Log(test);
+	log.Error(test);
+				
+	asterisk.Log(test);
+	asterisk.Error(test);
 	}
-
 }

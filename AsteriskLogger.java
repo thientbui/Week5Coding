@@ -9,9 +9,14 @@ public class AsteriskLogger implements Logger {
 	
 	@Override
 	public void Error(String error) {
-		String log = "****************";
-		System.out.println(log);
+		String log = "***Error: "+error+"***";
+		String temp="";
+		int logLength = log.length();
+		for(int i = 0;i<logLength;i++) {
+			temp+="*";
+		}
+		System.out.println(temp);
 		System.out.println("***Error: "+error+"***");
-		System.out.println(log);
+		System.out.println(temp);
 	}
 }
